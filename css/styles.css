@@ -19,7 +19,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  line-height: 1,71;
+  line-height: 1, 71;
   letter-spacing: 0.03em;
   color: var(--color-slate);
   background-color: var(--color-white);
@@ -477,7 +477,7 @@ img {
   height: 40px;
 }
 .social-footer {
-
+  margin-right: 80px;
 }
 .socials-link-footer {
   transition-property: background-color;
@@ -488,6 +488,35 @@ img {
 .socials-link-footer:hover,
 .socials-link-footer:focus {
   background-color: var(--color-green);
+}
+
+.form {
+}
+.field-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+}
+.field-input {
+  width: 264px;
+  height: 40px;
+  display: flex;
+  border: 1px solid var(--color-white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.subscribe-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  color: var(--color-white);
+  background: #4d5ae5;
+  border-radius: 4px;
 }
 
 /*main portfolio*/
