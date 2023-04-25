@@ -490,7 +490,7 @@ img {
   background-color: var(--color-green);
 }
 
-.form {
+.footer-form {
 }
 .field-name {
   font-weight: 500;
@@ -500,29 +500,35 @@ img {
   color: var(--color-white);
 }
 .field-input {
+  width: 264px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.04em;
+  color: var(--color-white);
   background-color: var(--color-naviblue);
+  border: 1px solid var(--color-white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 16px;
 }
-.user-name {
+.field-input::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 24px;
-  /* identical to box height, or 200% */
+  line-height: 2;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
   color: var(--color-white);
+  padding: 8px 16px 8px;
+}
+.user-name {
 }
 .form-btn {
   display: flex;
 }
 .subscribe-btn {
+  min-width: 165px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -531,7 +537,9 @@ img {
   gap: 16px;
   color: var(--color-white);
   background-color: var(--color-iris);
+  border: none;
   border-radius: 4px;
+  margin-top: 16px;
   margin-left: 24px;
 }
 
@@ -664,7 +672,6 @@ img {
   opacity: 1;
   min-width: 408px;
   min-height: 584px;
-
   background-color: var(--color-dairy);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -700,4 +707,20 @@ img {
 .modal-btn:focus {
   color: var(--color-cornflower);
   background-color: var(--color-ocean);
+}
+.modal-form {
+  position: relative;
+  display: flex;
+}
+.user-form {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+position: absolute;
+border-radius: 4px;
+}
+.modal-name {
+}
+.modal-button {
 }
