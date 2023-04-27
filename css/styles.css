@@ -664,7 +664,7 @@ img {
   pointer-events: none;
   transition-delay: 400ms;
 }
-.modal {
+.modal-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -697,6 +697,7 @@ img {
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 24px;
 }
 .modal-icon {
   width: 8px;
@@ -708,27 +709,32 @@ img {
   color: var(--color-cornflower);
   background-color: var(--color-ocean);
 }
-.modal-form {
-  position: relative;
-  display: flex;
+.modal-text-form {
+  position: absolute;
+  width: 360px;
+  height: 24px;
+  left: 540px;
+  top: 152px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-naviblue);
+  
 }
 .user-form {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-
   width: 360px;
   height: 336px;
   left: 540px;
   top: 192px;
 
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
 .modal-name {
   font-weight: 400;
