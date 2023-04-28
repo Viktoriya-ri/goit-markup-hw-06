@@ -671,11 +671,13 @@ img {
 }
 .modal-btn {
   position: absolute;
-  display: block;
-  width: 24px;
-  height: 24px;
   left: 360px;
   top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
   color: var(--color-naviblue);
   background-color: var(--color-cornflower);
   border: none;
